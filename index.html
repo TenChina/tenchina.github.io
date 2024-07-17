@@ -1,7 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <style>
+    
+<style>
+    body {
+            background-image: url("https://files.catbox.moe/3ackpo.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+    }
+#myText {
+            font-size: 50px; /* Kích thước chữ */
+            color: #ff00ff; /* Màu chữ (ví dụ: đỏ) */
+            display: none; /* Ẩn văn bản ban đầu */
+            text-align: center;
+            font-weight: bold;
+        }
+.imageChange {
+    max-width: 200px;
+    height: auto;
+}
+
   @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -42,7 +57,7 @@
     text-align: center;
     position: fixed;
     top: 20%;
-    left: 1.6%;
+    left: 28%;
     transform: translate(-50%, -50%);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -63,17 +78,17 @@
     animation:myfirst 0.1s;animation-iteration-count:infinite;-webkit-animation:myfirst 0.8s;-webkit-animation-iteration-count:infinite;font-family:Arial;font-weight:bold;text-decoration:none}@keyframes myfirst{0%{color:hsl(  10,90%,60% )}6%{color:hsl(  30,90%,60% )}12%{color:hsl(  50,90%,60% )}18%{color:hsl(  70,90%,60% )}24%{color:hsl(  90,90%,60% )}30%{color:hsl( 110,90%,60% )}36%{color:hsl( 130,90%,60% )}42%{color:hsl( 150,90%,60% )}48%{color:hsl( 170,90%,60% )}54%{color:hsl( 190,90%,60% )}60%{color:hsl( 210,90%,60% )}66%{color:hsl( 230,90%,60% )}72%{color:hsl( 250,90%,60% )}78%{color:hsl( 270,90%,60% )}84%{color:hsl( 290,90%,60% )}90%{color:hsl( 310,90%,60% )}96%{color:hsl( 330,90%,60% )}100%{color:hsl( 350,90%,60% )}}@-webkit-keyframes myfirst{0%{color:hsl(  10,90%,60% )}6%{color:hsl(  30,90%,60% )}12%{color:hsl(  50,90%,60% )}18%{color:hsl(  70,90%,60% )}24%{color:hsl(  90,90%,60% )}30%{color:hsl( 110,90%,60% )}36%{color:hsl( 130,90%,60% )}42%{color:hsl( 150,90%,60% )}48%{color:hsl( 170,90%,60% )}54%{color:hsl( 190,90%,60% )}60%{color:hsl( 210,90%,60% )}66%{color:hsl( 230,90%,60% )}72%{color:hsl( 250,90%,60% )}78%{color:hsl( 270,90%,60% )}84%{color:hsl( 290,90%,60% )}90%{color:hsl( 310,90%,60% )}96%{color:hsl( 330,90%,60% )}100%{color:hsl( 350,90%,60% )}
       }
 .tenchina{color:black;animation:myfirst 0.8s;animation-iteration-count:infinite;-webkit-animation:myfirst 1.2s;-webkit-animation-iteration-count:infinite;font-family:Arial;font-weight:bold;font-size:15px;text-decoration:none;text-align:center}@keyframes myfirst{0%{color:hsl( 10,90%,60% )}6%{color:hsl( 30,90%,60% )}12%{color:hsl( 50,90%,60% )}18%{color:hsl( 70,90%,60% )}24%{color:hsl( 90,90%,60% )}30%{color:hsl( 110,90%,60% )}36%{color:hsl( 130,90%,60% )}42%{color:hsl( 150,90%,60% )}48%{color:hsl( 170,90%,60% )}54%{color:hsl( 190,90%,60% )}60%{color:hsl( 210,90%,60% )}66%{color:hsl( 230,90%,60% )}72%{color:hsl( 250,90%,60% )}78%{color:hsl( 270,90%,60% )}84%{color:hsl( 290,90%,60% )}90%{color:hsl( 310,90%,60% )}96%{color:hsl( 330,90%,60% )}100%{color:hsl( 350,90%,60% )}}@-webkit-keyframes myfirst{0%{color:hsl( 10,90%,60% )}6%{color:hsl( 30,90%,60% )}12%{color:hsl( 50,90%,60% )}18%{color:hsl( 70,90%,60% )}24%{color:hsl( 90,90%,60% )}30%{color:hsl( 110,90%,60% )}36%{color:hsl( 130,90%,60% )}42%{color:hsl( 150,90%,60% )}48%{color:hsl( 170,90%,60% )}54%{color:hsl( 190,90%,60% )}60%{color:hsl( 210,90%,60% )}66%{color:hsl( 230,90%,60% )}72%{color:hsl( 250,90%,60% )}78%{color:hsl( 270,90%,60% )}84%{color:hsl( 290,90%,60% )}90%{color:hsl( 310,90%,60% )}96%{color:hsl( 330,90%,60% )}100%{color:hsl( 350,90%,60% )}}</style>
-</head>
+
 <body>
 
 <div id="notification" class="notification">
-  <div class="tenchina"><span style="font-size:22px">hi</div>
+  <div class="tenchina"><span style="font-size:22px">Nguyễn Đức</div>
   <div class="tenchina">
-        1
-    <br>2
-    <br>3
-    <br>4
-    <br>5
+
+    <br>
+    <img src="https://files.catbox.moe/t2mhzi.jpeg" class="imageChange" >
+    <br>
+    <br>Wechat ID:pastaola2
     
   </div>
   <button class="close-btn" onclick="document.getElementById('notification').style.display='none'">Đóng</button>
@@ -97,47 +112,24 @@
 // Gán hàm closeNotification vào sự kiện onclick của nút đóng
 document.querySelector('.close-btn').onclick = closeNotification;
 
+  setTimeout(function() {
+            document.getElementById("myText").style.display = "block"; // Hiển thị văn bản sau 3 giây
+        }, 3000);
+
+  var isFirstClick = true;
+
+        function playMusic() {
+            if (isFirstClick) {
+                var audio = new Audio("https://files.catbox.moe/4nygyc.mp3"); // Thay đổi tên tệp nhạc
+                audio.play();
+                isFirstClick = false;
+            }
+        }
+
+        document.addEventListener("click", playMusic);
+  
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Tùy chỉnh giao diện cho trình phát nhạc */
-        .music-player {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            animation: pulse-border 1s infinite alternate; /* Thêm hiệu ứng nhấp nháy */
-        }
 
-        @keyframes pulse-border {
-            from {
-                border: 2px solid #ddd;
-            }
-            to {
-                border: 2px solid #ff5733; /* Màu viền nhấp nháy */
-            }
-        }
+  <p id="myText">Có CP đổi tên =]]</p>
+  <p class="tenchina"><span style="font-size:30px">coming soon</p>
 
-        /* Tùy chỉnh nút điều khiển */
-        audio::-webkit-media-controls-panel {
-            background-color: #333;
-            border-radius: 5px;
-        }
-
-        /* Tùy chỉnh thanh tiến độ */
-        audio::-webkit-media-controls-current-time-display,
-        audio::-webkit-media-controls-time-remaining-display {
-            color: #fff;
-        }
-    </style>
-</head>
-<body>
-    <div class="music-player">
-        <audio controls>
-            <source src="https://files.catbox.moe/4nygyc.mp3" type="audio/mpeg">
-            Trình phát nhạc không được hỗ trợ trên trình duyệt của bạn.
-        </audio>
-    </div>
-</body>
-</html>
